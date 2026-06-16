@@ -105,18 +105,6 @@ The pipeline generates:
 - Cryptographic report hash
 - Final Markdown clinical report
 
-Output structure:
-
-```text
-clinical_runs/
-└── run_001/
-    ├── overlays/
-    ├── metrics.json
-    ├── clinical_report.md
-    └── report_hash.txt
-```
-
----
 
 ##  Extracted Facial Metrics
 
