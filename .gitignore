@@ -1,0 +1,49 @@
+# =========================
+# Multi-Spectral CV Pipeline
+# =========================
+
+# 1. Environment Variables & Secrets (CRITICAL)
+.env
+.env.*
+*.env
+
+# 2. Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+env_mas/
+.venv/
+lib/
+Scripts/
+
+# 3. Model Weights & Large Files
+# Ignore MediaPipe models to prevent repo bloat
+*.task
+face_landmarker.task
+
+# 4. Pipeline Outputs & Patient Data
+# Do not commit generated clinical reports or images
+clinical_runs/
+sample_output/
+*.jpg
+*.png
+*.jpeg
+*.md
+
+# Exception: Allow the README and explicitly placed sample outputs
+!README.md
+!sample_output/raw_patient_face.png
+!sample_output/clinical_diagnostic_report.md
+!sample_output/*_diagnostic.jpg
+
+# 5. Third-Party Agent Artifacts
+.agentdna/
+agent_info.json
+
+# 6. IDEs & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

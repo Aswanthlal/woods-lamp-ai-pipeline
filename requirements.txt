@@ -1,0 +1,10 @@
+opencv-python
+numpy
+mediapipe
+langgraph
+openai
+typing-extensions
+langgraph
+openai
+dotenv
+git+https://github.com/rubixchain/agentdna.git
